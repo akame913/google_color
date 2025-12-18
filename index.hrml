@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Googleカラースタイル付きタブコンテンツ - メニュー</title>
+    <!-- Tailwind CSS CDNをロード -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Googleのブランドカラー定義 */
+        .google-blue { --tw-bg-opacity: 1; background-color: rgb(66 133 244 / var(--tw-bg-opacity)); }
+        .google-red { --tw-bg-opacity: 1; background-color: rgb(234 67 53 / var(--tw-bg-opacity)); }
+        .google-yellow { --tw-bg-opacity: 1; background-color: rgb(251 188 5 / var(--tw-bg-opacity)); }
+        .google-green { --tw-bg-opacity: 1; background-color: rgb(52 168 83 / var(--tw-bg-opacity)); }
+
+        .google-blue-text { color: rgb(66 133 244); }
+        .google-red-text { color: rgb(234 67 53); }
+        .google-yellow-text { color: rgb(251 188 5); }
+        .google-green-text { color: rgb(52 168 83); }
+
+        /* スタイルベース */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* 非常に明るいグレー */
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .menu-link {
+            transition: all 0.2s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px; /* ボタンの高さを固定 */
+            border-radius: 0.75rem;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 1.25rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-link:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div id="app" class="w-full max-w-4xl bg-white shadow-xl rounded-2xl overflow-hidden p-6 sm:p-8">
+
+        <!-- ヘッダーとタイトル -->
+        <header class="pb-6 border-b border-gray-100 mb-8">
+            <h1 class="text-3xl font-bold text-gray-800">
+                <span class="google-blue-text">G</span>
+                <span class="google-red-text">o</span>
+                <span class="google-yellow-text">o</span>
+                <span class="google-blue-text">g</span>
+                <span class="google-green-text">l</span>
+                <span class="google-red-text">e</span> スタイル コンテンツ メニュー
+            </h1>
+            <p class="text-gray-500 mt-1">以下のリンクから各コンテンツページへ移動してください。</p>
+        </header>
+
+        <!-- コンテンツリンクエリア (グリッドレイアウトに変更) -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- コンテンツ 1: 青 -->
+            <a href="content1.html" class="menu-link google-blue">コンテンツ 1 (青)</a>
+
+            <!-- コンテンツ 2: 赤 -->
+            <a href="content2.html" class="menu-link google-red">コンテンツ 2 (赤)</a>
+
+            <!-- コンテンツ 3: 黄 -->
+            <a href="content3.html" class="menu-link google-yellow">コンテンツ 3 (黄)</a>
+
+            <!-- コンテンツ 4: 緑 -->
+            <a href="content4.html" class="menu-link google-green">コンテンツ 4 (緑)</a>
+
+            <!-- コンテンツ 5: 青/赤 -->
+            <a href="content5.html" class="menu-link bg-gradient-to-r from-blue-500 to-red-500">コンテンツ 5 (青 & 赤)</a>
+
+            <!-- コンテンツ 6: 黄/緑 -->
+            <a href="content6.html" class="menu-link bg-gradient-to-r from-yellow-500 to-green-500">コンテンツ 6 (黄 & 緑)</a>
+        
+        </main>
+
+        <!-- フッター -->
+        <footer class="p-4 text-center text-sm text-gray-400 border-t border-gray-100 mt-8">
+            &copy; 2025 Googleカラースタイルデモ. 全てのコンテンツは個別のファイルに分離されました。
+        </footer>
+
+    </div>
+</body>
+</html>

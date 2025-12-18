@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コンテンツ 1: 青色のサービス紹介</title>
+    <!-- Tailwind CSS CDNをロード -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Googleのブランドカラー定義 */
+        .google-blue { --tw-bg-opacity: 1; background-color: rgb(66 133 244 / var(--tw-bg-opacity)); }
+        .google-blue-text { color: rgb(66 133 244); }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            min-height: 100vh;
+        }
+        /* テーブルの境界線とパディングを調整 */
+        .content-table th, .content-table td {
+            padding: 12px 16px;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 flex justify-center">
+
+    <div id="app" class="w-full max-w-4xl bg-white shadow-xl rounded-2xl overflow-hidden">
+
+        <!-- ヘッダー -->
+        <header class="google-blue text-white p-6 sm:p-8">
+            <h1 class="text-3xl font-bold">コンテンツ 1: 青色のサービス紹介</h1>
+            <p class="text-blue-200 mt-1">信頼性、知性、そして無限の可能性</p>
+        </header>
+
+        <!-- メインコンテンツ -->
+        <main class="p-6 sm:p-8">
+            <div class="space-y-6">
+                <p class="text-gray-700 leading-relaxed">
+                    このページは、Google Blueをテーマにした情報を含みます。青色は、Web検索、マップ、クラウドサービスなどの主要なGoogleプロダクトの核となる色であり、信頼性と技術の深さを象徴しています。
+                </p>
+
+                <div class="border-l-4 border-blue-500 pl-4 py-2 bg-blue-50 rounded-md">
+                    <h3 class="text-xl font-semibold google-blue-text mb-4">主要なトピック (表形式)</h3>
+                    
+                    <!-- リスト/段落形式から表形式に変更 -->
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left text-gray-500 content-table border-collapse">
+                            <thead class="text-xs text-gray-700 uppercase bg-blue-100/50 border-b border-blue-200">
+                                <tr>
+                                    <th scope="col" class="rounded-tl-lg">分野</th>
+                                    <th scope="col" class="rounded-tr-lg">詳細な説明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b hover:bg-blue-50">
+                                    <th scope="row" class="font-medium text-gray-900 whitespace-nowrap">
+                                        データ分析の進化
+                                    </th>
+                                    <td class="text-gray-700">
+                                        ビッグデータの処理と、それに基づくインサイト抽出技術に関する最新情報を提供します。
+                                    </td>
+                                </tr>
+                                <tr class="bg-white border-b hover:bg-blue-50">
+                                    <th scope="row" class="font-medium text-gray-900 whitespace-nowrap">
+                                        クラウドコンピューティングの未来
+                                    </th>
+                                    <td class="text-gray-700">
+                                        スケーラブルなインフラストラクチャとセキュリティに関する将来的な展望を解説します。
+                                    </td>
+                                </tr>
+                                <tr class="bg-white hover:bg-blue-50">
+                                    <th scope="row" class="font-medium text-gray-900 whitespace-nowrap">
+                                        新しいAI技術の動向
+                                    </th>
+                                    <td class="text-gray-700">
+                                        大規模言語モデル（LLM）と機械学習の最新の応用事例について深く掘り下げます。
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 変更終了 -->
+                </div>
+
+                <p class="text-gray-700 italic">
+                    デジタル時代の基盤となるサービスについて深く掘り下げています。
+                </p>
+            </div>
+            
+            <!-- メニューに戻るボタン -->
+            <div class="mt-8 text-center">
+                <a href="index.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white google-blue hover:bg-blue-600 transition duration-150 ease-in-out">
+                    メニューに戻る
+                </a>
+            </div>
+        </main>
+
+        <!-- フッター -->
+        <footer class="p-4 text-center text-sm text-gray-400 border-t border-gray-100 mt-4">
+            &copy; 2025 コンテンツ 1 ページ.
+        </footer>
+    </div>
+</body>
+</html>
